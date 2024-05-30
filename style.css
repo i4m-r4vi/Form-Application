@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./images/peakpx.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "poppins", sans-serif;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 12px 0 12px 0;
+}
+
+input[type="text"] {
+    padding: 8px 6px 8px 6px;
+    border: 2px solid rgb(80, 73, 73);
+    border-radius: 15px;
+    outline: none;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 12px 0 12px 0;
+}
+
+.forms {
+    width: 450px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    border: 1px solid rgba(255, 255, 255, 2);
+    border-radius: 30px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+i {
+    color: black;
+    position: relative;
+    right: 30px;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width:465px) {
+    i {
+        position: absolute;
+        margin-top: 8px;
+
+    }
+
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        position: relative;
+    }
+}
+
+@media screen and (max-width:375px) {
+    i {
+        position: absolute;
+        margin-top: 8px;
+    }
+
+    input[type="text"] {
+        padding: 8px px 8px px;
+    }
+
+}

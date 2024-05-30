@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Application(By Ravi)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap
+    stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="forms">
+        <h2 style="text-align: center;">Form Application</h2>
+        <form action="" name="contactForm">
+            <div class="container">
+                <label for="">*Full Name</label>
+                <section>
+                    <input type="text" name="name" id="" placeholder="Enter Full Name" re\
+                    ><i class="fa fa-user" aria-hidden="true"></i>
+                    <span id="name-err"></span>
+                </section>
+            </div>
+
+            <div class="container1">
+                <label for="">*Gender</label>
+                <section>
+                    <label for=""><input type="radio" name="gradio" id="" value="Male"> Male</label><br>
+                    <label for=""><input type="radio" name="gradio" id="" value="Female"> Female</label><br>
+                    <span id="gend-err"></span>
+                </section>
+
+            </div>
+
+            <div class="container">
+                <label for="">*Email</label>
+                <section>
+                    <input type="text" name="email" id="" placeholder="Enter Email">
+                    <span id="email-err"></span>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </section>
+            </div>
+            <div class="container">
+                <label for="">*Age</label>
+                <section>
+                    <input type="text" name="age" id="" placeholder="Enter Age">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </section>
+            </div>
+
+            <div class="container">
+                <label for="">*Phone Number</label>
+                <section>
+                    <input type="text" name="mobilen" id="" placeholder="Enter Phone Number" maxlength="10">
+                    <span id="mob-err"></span>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                </section>
+            </div>
+
+            <div class="container1">
+                <label for="">Hobbies<br>(Optional)</label>
+                <section>
+                    
+                    <label for=""> <input type="checkbox" name="hobbies" id="" value="Cricket"> Cricket</label><br>
+                    <label for=""></label><input type="checkbox" name="hobbies" id="" value="Batmitton"> Batmitton</label><br>
+                    <label for=""></label><input type="checkbox" name="hobbies" id="" value="Hockey"> Hockey</label><br>
+                    <label for=""></label><input type="checkbox" name="hobbies" id="" value="Footbaall"> Footbaall </label><br>
+                </section>
+                <span id="hob-err"></span>
+            </div>
+
+            <div class="container1">
+                <label for="">*Class</label>
+                <section>
+                    <label for=""><input type="radio" name="c" id="" value="1st-5th"> 1st-5th </label><br>
+                    <label for=""><input type="radio" name="c" id="" value="6th-12th"> 6th-12th</label><br>
+                    <label for=""><input type="radio" name="c" id="" value="UG or PG"> UG or PG</label><br>
+                </section>
+                <span id="class-err"></span>
+            </div>
+            <center><button onclick="return formvali()">Submit</button></center>
+</body>
+
+</html>
